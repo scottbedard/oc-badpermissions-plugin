@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Post
+
+# Model Form Field configuration
+form: $/bedard/badpermissions/models/post/fields.yaml
+
+# Model Class name
+modelClass: Bedard\BadPermissions\Models\Post
+
+# Default redirect location
+defaultRedirect: bedard/badpermissions/posts
+
+# Create page
+create:
+    title: Create Post
+    redirect: bedard/badpermissions/posts/update/:id
+    redirectClose: bedard/badpermissions/posts
+
+# Update page
+update:
+    title: Edit Post
+    redirect: bedard/badpermissions/posts
+    redirectClose: bedard/badpermissions/posts
+
+# Preview page
+preview:
+    title: Preview Post
